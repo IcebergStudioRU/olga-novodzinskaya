@@ -1,9 +1,13 @@
-import React from 'react';
+import React from "react";
+import Header from "../components/Header";
+import Screen from "../components/Screen";
 
 const Home = () => {
-    return (
-        <div>HomePage</div>
-    );
-}
+  return (
+    <Screen>
+      <Header />
+    </Screen>
+  );
+};
 
 export default Home;
