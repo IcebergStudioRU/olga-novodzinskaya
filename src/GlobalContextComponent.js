@@ -1,4 +1,4 @@
-import React, {useState, createContext} from "react";
+import React, { useState, createContext } from "react";
 
 export const GlobalContext = createContext();
 
@@ -11,7 +11,11 @@ const getViewPort = () => {
 
 const GlobalContextComponent = ({ children }) => {
   const [mobileMenu, setMobileMenu] = useState(false);
-  return <GlobalContext.Provider value={{mobileMenu, setMobileMenu}}>{children}</GlobalContext.Provider>;
+  return (
+    <GlobalContext.Provider value={{ mobileMenu, setMobileMenu }}>
+      {children}
+    </GlobalContext.Provider>
+  );
 };
 
 export default GlobalContextComponent;
