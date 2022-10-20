@@ -64,7 +64,11 @@ const ServicesSection = ({ backgroundColor }) => {
   };
 
   return (
-    <Section backgroundColor={backgroundColor} className="py-5 gap-8">
+    <Section
+      id="services-section"
+      backgroundColor={backgroundColor}
+      className="py-5 gap-8"
+    >
       <Header2 color="text-red-300">Мои услуги</Header2>
       {isMobile && selectedService ? (
         <>

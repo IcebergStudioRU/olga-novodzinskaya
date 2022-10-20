@@ -47,11 +47,7 @@ const ReviewsSection = ({ backgroundColor }) => {
   }
 
   return (
-    <Section
-      id="reviews-section"
-      backgroundColor={backgroundColor}
-      className="pt-5 pb-7 gap-y-10"
-    >
+    <Section backgroundColor={backgroundColor} className="pt-5 pb-7 gap-y-10">
       <Header2 color="text-red-300">Отзывы</Header2>
       <div className="flex flex-col">
         {isMobile && selectedReview ? (
